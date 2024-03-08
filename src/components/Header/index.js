@@ -65,7 +65,7 @@ const Header = () => {
       </button>
 
       <nav
-        className=" w-max py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex  sm:hidden
+        className=" w-4/5 py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex justify-between  sm:hidden
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
         transition-all ease duration-300
         "
@@ -95,7 +95,7 @@ const Header = () => {
       </nav>
 
       <nav
-        className=" w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center hidden sm:flex
+        className=" w-3/5 py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize justify-between  items-center hidden sm:flex
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50"
       >
         <Link href="/" className="mr-2">
@@ -122,7 +122,7 @@ const Header = () => {
           )}
         </button>
       </nav>
-      <div className=" hidden sm:flex items-center">
+      <div className=" hidden sm:flex items-center ">
         <a
           href={siteMetadata.linkedin}
           rel="noopener noreferrer"
