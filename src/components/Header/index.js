@@ -95,10 +95,10 @@ const Header = () => {
       </nav>
 
       <nav
-        className=" w-3/5 py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize justify-between  items-center hidden sm:flex
-        fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50"
+        className=" w-3/5 py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize justify-start  items-center hidden sm:flex
+        fixed top-6 right-1/2 translate-x-1/2  backdrop-blur-sm z-50"
       >
-        <Link href="/" className="mr-2">
+        <Link href="/" className="mr-2 text-dark bg-white p-1 px-4 rounded-2xl">
           Home
         </Link>
         {/* <Link href="/about" className="mx-2">
@@ -107,20 +107,6 @@ const Header = () => {
         <Link href="/contact" className="mx-2">
           Contact
         </Link> */}
-        <button
-          onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={cx(
-            "w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1",
-            mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-          )}
-          aria-label="theme-switcher"
-        >
-          {mode === "light" ? (
-            <MoonIcon className={"fill-dark"} />
-          ) : (
-            <SunIcon className={"fill-dark"} />
-          )}
-        </button>
       </nav>
       <div className=" hidden sm:flex items-center ">
         <a
@@ -159,6 +145,20 @@ const Header = () => {
         >
           <DribbbleIcon className="hover:scale-125 transition-all ease duration-200" />
         </a> */}
+        <button
+          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+          className={cx(
+            "w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1",
+            mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+          )}
+          aria-label="theme-switcher"
+        >
+          {mode === "light" ? (
+            <MoonIcon className={"fill-dark"} />
+          ) : (
+            <SunIcon className={"fill-dark"} />
+          )}
+        </button>
       </div>
     </header>
   );
