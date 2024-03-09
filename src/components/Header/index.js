@@ -30,7 +30,7 @@ const Header = () => {
         onClick={toggle}
         aria-label="Hamburger Menu"
       >
-        <div className="w-6 cursor-pointer transition-all ease duration-300">
+        <div className="w-6 cursor-pointer translate-x-[-15px] transition-all ease duration-300">
           <div className="relative">
             <span
               className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
@@ -65,7 +65,7 @@ const Header = () => {
       </button>
 
       <nav
-        className=" w-4/5 py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex justify-between  sm:hidden
+        className=" w-3/5 py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex justify-between  sm:hidden
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
         transition-all ease duration-300
         "
@@ -95,10 +95,13 @@ const Header = () => {
       </nav>
 
       <nav
-        className=" w-3/5 px-8  rounded-full font-medium capitalize justify-start  items-center hidden sm:flex
+        className=" w-3/5 py-3 px-8  rounded-full font-medium capitalize justify-start  items-center hidden sm:flex
         fixed top-6 right-1/2 translate-x-1/2  z-50"
       >
-        <Link href="/" className="mr-2 text-dark bg-white p-1 px-4 rounded-2xl">
+        <Link
+          href="/"
+          className="mr-2 text-white dark:bg-white dark:text-dark bg-dark p-1 px-4 rounded-2xl"
+        >
           Home
         </Link>
         {/* <Link href="/about" className="mx-2">
