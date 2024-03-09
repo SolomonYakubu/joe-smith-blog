@@ -30,8 +30,11 @@ const Header = () => {
         onClick={toggle}
         aria-label="Hamburger Menu"
       >
-        <div className="w-6 cursor-pointer translate-x-[-15px] transition-all ease duration-100">
-          <div className="relative">
+        <div
+          onClick={toggle}
+          className="w-6 cursor-pointer translate-x-[-15px] transition-all ease duration-100"
+        >
+          <div onClick={toggle} className="relative">
             <span
               className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
               style={{
