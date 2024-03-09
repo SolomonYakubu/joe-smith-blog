@@ -32,7 +32,7 @@ const Header = () => {
       >
         <div
           onClick={toggle}
-          className="w-8 cursor-pointer translate-x-[-17px] transition-all ease duration-100"
+          className="w-8 cursor-pointer translate-x-[-17px] gap-2 transition-all ease duration-100"
         >
           <div onClick={toggle} className="relative">
             <span
