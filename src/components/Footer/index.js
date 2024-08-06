@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="text-center">
           Made with &hearts; by{" "}
           <a href="" className="underline" target="_blank">
-            Joe Smith
+            Kingsolo
           </a>
         </div>
       </div>
